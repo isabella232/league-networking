@@ -21,6 +21,7 @@ export class JitsiClient extends EventTarget {
     setJitsiIFrame(iframe) {
         this.iframe = iframe;
         this.apiOrigin = new URL(iframe.src).origin;
+        console.log(this.apiOrigin);
         this.apiWindow = this.iframe.contentWindow || window;
     }
 
@@ -93,14 +94,6 @@ export class JitsiClient extends EventTarget {
                 startVideoMuted: 0,
                 startWithVideoMuted: true
             },
-            interfaceConfigOverwrite: {
-                DISABLE_VIDEO_BACKGROUND: true,
-                SHOW_JITSI_WATERMARK: false,
-                SHOW_WATERMARK_FOR_GUESTS: false,
-                SHOW_POWERED_BY: true,
-                AUTHENTICATION_ENABLE: false,
-                MOBILE_APP_PROMO: false
-            }
         });
 
         addEventListener("unload", () => {
