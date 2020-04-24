@@ -15,10 +15,17 @@
      *   https://github.com/jitsi/jitsi-meet/blob/master/doc/api.md
      */
 
-    const FRONT_END_SERVER = "https://meet.primrosevr.com",
-        ALT_FRONT_END_SERVER = "https://www.calla.chat",
+    const FRONT_END_SERVER = "https://networking.league.superhero.com",
+        ALT_FRONT_END_SERVER = "https://aeternity.com",
         ALLOW_LOCAL_HOST = true,
         BUFFER_SIZE = 1024;
+
+    // Full list of origins that are allowed to send messages
+    const FRONT_END_SERVERS = [
+        FRONT_END_SERVER,
+        ALT_FRONT_END_SERVER,
+        'https://league.superhero.com'
+    ];
 
     // The rest is just implementation.
 
@@ -216,8 +223,7 @@
     function rxJitsiHax(evt) {
         const isLocalHost = evt.origin.match(/^https?:\/\/localhost\b/);
 
-        if (evt.origin === FRONT_END_SERVER
-            || evt.origin === ALT_FRONT_END_SERVER
+        if (FRONT_END_SERVERS.indexOf(evt.origin) >= 0
             || ALLOW_LOCAL_HOST && isLocalHost) {
             try {
                 const data = JSON.parse(evt.data),
