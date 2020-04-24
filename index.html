@@ -3,21 +3,21 @@
 
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
-    <title>Calla: Spatialized Voice Chat for Meetups</title>
+    <title>Superhero League Networking</title>
     <meta name="description" content="Voice chat with an RPG map. Volume scales with distance from other users. Walk around, talk to folks, have private conversations by huddling in a corner, or drop in on other conversations. Ideal for meetups!" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.calla.chat" />
-    <meta property="og:site_name" content="Calla.chat" />
-    <meta property="og:title" content="Calla: Spatialized Voice Chat for Meetups" />
+    <meta property="og:url" content="https:/league.superhero.com" />
+    <meta property="og:site_name" content="league.superhero.com" />
+    <meta property="og:title" content="Superhero League Networking" />
     <meta property="og:description" content="Voice chat with an RPG map. Volume scales with distance from other users. Walk around, talk to folks, have private conversations by huddling in a corner, or drop in on other conversations. Ideal for meetups!" />
-    <meta property="og:image" content="https://www.calla.chat/repo-preview.jpg" />
+    <meta property="og:image" content="/repo-preview.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:domain" content="Calla.chat" />
-    <meta name="twitter:title" content="Calla: Spatialized Voice Chat for Meetups" />
+    <meta name="twitter:domain" content="league.superhero.com" />
+    <meta name="twitter:title" content="Superhero League Networking" />
     <meta name="twitter:description" content="Voice chat with an RPG map. Volume scales with distance from other users. Walk around, talk to folks, have private conversations by huddling in a corner, or drop in on other conversations. Ideal for meetups!" />
-    <meta name="twitter:image" content="https://www.calla.chat/repo-preview.jpg" />
+    <meta name="twitter:image" content="/repo-preview.jpg" />
     <meta name="twitter:creator" content="@Sean_McBeth" />
 
     <meta name="viewport" content="width=device-width, shrink-to-fit=0, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -40,7 +40,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <script id="app-settings">
-        const JITSI_HOST = "jitsi.calla.chat",
+        const JITSI_HOST = "league.superhero.com",
             MOVE_REPEAT = 0.125,
             MOVE_TRANSITION_TIME = 0.5;
     </script>
@@ -70,13 +70,10 @@
             </button>
             <button type="button" id="leave" title="Leave the room">Leave</button>
 
-            <a href="https://github.com/capnmidnight/Calla" target="_blank" rel="noopener">
-                <span class="icon icon-github" title="Follow Calla on Github">
-                    <span class="accessibility-text">Follow Calla on Github</span>
+            <a href="https://github.com/aeternity/league-networking" target="_blank" rel="noopener">
+                <span class="icon icon-github" title="Follow on Github">
+                    <span class="accessibility-text">Follow on Github</span>
                 </span>
-            </a>
-            <a href="https://twitter.com/Sean_McBeth" target="_blank" rel="noopener">
-                <span class="icon icon-twitter" title="Follow @Sean_McBeth on Twitter" />
             </a>
         </div>
         <div id="jitsi"></div>
@@ -202,10 +199,10 @@
 
         <div id="login">
             <h1>
-                Calla
-                <a href="https://github.com/capnmidnight/Calla" target="_blank" rel="noopener">
-                    <span class="icon icon-github" title="Follow Calla on Github">
-                        <span class="accessibility-text">Follow Calla on Github</span>
+                Superhero League Networking
+                <a href="https://github.com/aeternity/league-networking" target="_blank" rel="noopener">
+                    <span class="icon icon-github" title="Follow on Github">
+                        <span class="accessibility-text">Follow on Github</span>
                     </span>
                 </a>
             </h1>
@@ -224,20 +221,16 @@ grid-template-rows: auto;">
                 <select id="existingRooms" style="
     grid-column: 2;
     grid-row: 1">
-                    <option value="Calla">Calla</option>
-                    <option value="island">Island</option>
-                    <option value="ALXCC">Alexandria Code &amp; Coffee</option>
-                    <option value="Vurv">Vurv</option>
+                    <option value="Networking">Networking</option>
                 </select>
                 <input type="text" id="roomName" autocomplete="off" placeholder="(Required)" style="
     grid-column: 2;
     grid-row: 1;
-    display: none" />
+    display: none" value="Networking"/>
                 <button type="button" id="createNewRoom" title="Create a new, temporary room" style="
     grid-column: 3">
                     New
                 </button>
-
 
                 <label for="user" style="
     grid-column: 1;
@@ -257,7 +250,7 @@ grid-template-rows: auto;">
             <h2>Preview</h2>
             <video src="videos/demo.webm" style="width:100%" loop autoplay controls></video>
             <h2>Instructions</h2>
-            <aside style="border:dashed 2px darkred;background-color:wheat;border-radius:5px;padding:0.5em"><strong>Note:</strong> Calla is built on top of <a href="https://jitsi.org">Jitsi Meet</a>. Jitsi does not support iPhones and iPads.</aside>
+            <aside style="border:dashed 2px darkred;background-color:wheat;border-radius:5px;padding:0.5em"><strong>Note:</strong> Superhero League Networking is built on top of <a href="https://jitsi.org">Jitsi Meet</a>. Jitsi does not support iPhones and iPads.</aside>
             <ul>
                 <li><strong>Be careful in picking your room name</strong>, if you don't want randos to join. Traffic is low right now, but you never know.</li>
                 <li>Try to <strong>pick a unique user name</strong>. A lot of people use "Test" and then there are a bunch of people with the same name running around.</li>
@@ -269,28 +262,13 @@ grid-template-rows: auto;">
                 <li>You can <strong>roll your mouse wheel</strong> or <strong>pinch your touchscreen</strong> to zoom in and out of the map view. This is useful for groups of people standing close to each other to see the detail in their Avatar.</li>
                 <li>Either <strong>Hide the game view</strong> or <strong>Separate the game and meeting views</strong> to be able to access the Jitsi Meet interface. Calla captures all of the mouse clicks to enable moving.</li>
             </ul>
-            <h2>Made by</h2>
-            <p>
-                <a href="https://www.seanmcbeth.com" target="_blank" rel="noopener">
-                    <span class="icon icon-shrink" title="Sean T. McBeth" />
-                </a>
-                Sean T. McBeth
-            </p>
-            <p>
-                <a href="https://twitter.com/Sean_McBeth" target="_blank" rel="noopener">
-                    <span class="icon icon-twitter" title="Follow @Sean_McBeth on Twitter" />
-                </a>
-                Follow @Sean_McBeth on Twitter
-            </p>
+            <h4>Based on <a href="https://calla.chat" target="_blank" rel="noopener">Calla</a></h4>
         </div>
 
     </section>
 
     <script type="module">
-        const pageFileName = document.location.pathname.substring(1) || "index.html",
-            pageName = pageFileName.match(/(\w+)\.html/)[1],
-            scriptFile = `./scripts/${pageName}.js`;
-        import(scriptFile);
+        import('./scripts/index.js');
     </script>
 </body>
 
